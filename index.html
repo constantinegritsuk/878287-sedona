@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-heade">
     <nav class="navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.jpg" width="140" height="71" alt="Седона">
+        <img src="img/logo.jpg" width="140" height="71" alt="Логотип Седона">
       </a>
       <ul class ="style-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -25,32 +28,65 @@
     <h2> Becouse the Grand Canyon sucks</h2>
     <p>Седона - небольшой городок в Аризоне заслуживающий большего!</p>
     <p>рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <h2 class="visually-hidden">Преимущества</h2>
+    <ul class="advantage-list">
+      <li><a href="Настоящий городок.html">Настоящий городок</a></li>
+      <img src="img/настоящий городок.jpg" wight="800" height="256" alt="настоящий городок">
+      <li><a href="Мост дьявола.html">Мост дьявола</a></li>
+      <img src="img/мост дьявола.jpg" wight="800" height="400" alt="мост дьявола">
+      <li><a href="Небольшая площадь.html">Небольшая площадь</a></li>
+      <li><a href="Красивая дорога.html">Красивая дорога</a></li>
+      <li><a href="Мало туристов.html">Мало туристов</a></li>
+      <li>
+        <ul class="more-advantages">
+          <li><a href="Жилье">Жилье</a></li>
+          <li><a href="Еда.html">Еда</a></li>
+          <li><a href="Сувениры">Сувениры</a></li>
+        </ul>
+      </li>
+    </ul>
     <b>Заинтересовались?</b>
     <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <p>Поиск гостиниц в Седоне</p>
-    <ul class="search-hottel">
-      <li>дата заезда:</li>
-      <li> дата выезда:</li>
-      <li>Взрослые:</li>
-      <li>Дети:</li>
-    </ul>
-    <span class="search-button">Найти</span>
-  </main>
-  <footer class="social">
-    <p class="social">
-      <a href="#VISITSEDONA.html">#VISITSEDONA</a>
+    <form class="search" method="post"
+    action="https://echo.htmlacademy.ru">
+    <p>
+      <label for="arrival date">дата заезда:</label>
+      <input id="arrival date" type="date" name="Дата заезда" placeholder="24 апреля 2017">
     </p>
-    <div class="footer-social">
-      <a class="social-button" href="#">Twetter</a>
-      <img src="img/t.png" width="17" height="15" alt="Twetter">
-      <a class="social-button" href="#">Facebook</a>
-      <a class="social-button" href="#">Youtube</a>
-    </div>
-    <p class="footer-copyright">
-      <b>website by html Academy</b>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+    <p>
+      <label for="date of departure">дата выезда:</label>
+      <input id="date of departure" type="date" name="Дата выезда" placeholder="24 апреля 2017">
     </p>
-  </footer>
+    <p>
+      <label for="adults">Взрослые:</label>
+      <input id="adults" type="number" name="Взрослые" placeholder="2">
+    </p>
+    <p>
+      <label for="children">Дети:</label>
+      <input id="children" type="number" name="Дети" placeholder="0">
+    </p>
+  </form="">
+  <button class="button">
+    Найти
+  </button>
+  <img src="img/map.jpg" wight="120" height="593">
+</main>
+<footer class="social">
+  <p class="social">
+    <a href="#VISITSEDONA.html">#VISITSEDONA</a>
+  </p>
+  <div class="footer-social">
+    <a class="social-button" href="#">Twetter</a>
+    <img src="img/t.png" width="17" height="15" alt="Twetter">
+    <a class="social-button" href="#">Facebook</a>
+    <a class="social-button" href="#">Youtube</a>
+  </div>
+  <p class="footer-copyright">
+    <b>website by html Academy</b>
+    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+  </p>
+</footer>
 
 
 
